@@ -737,10 +737,12 @@ svg{display:block}
 :root:not([data-theme="dark"]) .job:hover,
 :root:not([data-theme="dark"]) .meet__row:hover{background:var(--hover)}
 
-}
 @media (max-width:980px){
   .dash{grid-template-columns:minmax(0,1fr);grid-template-areas:"svc" "buy" "meet" "files" "act" "tasks" "recs"}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:minmax(0,1fr)}
 }
 
 /* ==========================================================================
