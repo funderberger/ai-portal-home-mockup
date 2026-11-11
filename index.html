@@ -1496,6 +1496,19 @@ svg{display:block}
   .fig-banner{border-radius:20px;font-size:14px}
   .dash > .w--buy .w__title,.dash > .w--meet .w__title,.dash > .w--files .w__title{font-size:24px}
 }
+
+/* ---- нижние панели по Figma: полупрозрачные, строки 4% белого, высота как в макете ---- */
+:root:not([data-theme="light"]) .dash > .w--tasks,
+:root:not([data-theme="light"]) .dash > .w--recs,
+:root[data-theme="dark"] .dash > .w--tasks,
+:root[data-theme="dark"] .dash > .w--recs{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);box-shadow:none}
+:root:not([data-theme="light"]) .dash > .w--tasks .job,
+:root[data-theme="dark"] .dash > .w--tasks .job{background:rgba(255,255,255,.043)}
+:root:not([data-theme="light"]) .dash > .w--recs .hist__row:hover,
+:root[data-theme="dark"] .dash > .w--recs .hist__row:hover{background:rgba(255,255,255,.043)}
+@media (min-width:901px){
+  .dash > .w--tasks,.dash > .w--recs{height:366px;overflow:hidden}
+}
 </style>
 </head>
 <body>
